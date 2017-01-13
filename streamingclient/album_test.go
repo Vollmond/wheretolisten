@@ -1,0 +1,1 @@
+package streamingclient_test
