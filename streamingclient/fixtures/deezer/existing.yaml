@@ -1,0 +1,31 @@
+---
+version: 1
+rwmutex: {}
+interactions:
+- request:
+    body: ""
+    form: {}
+    headers: {}
+    url: https://api.deezer.com/search/album?q=artist%3A%22Spiritual+Front%22+album%3A%22Armageddon+Gigolo%22
+    method: GET
+  response:
+    body: '{"data":[{"id":9323488,"title":"Armageddon Gigolo","link":"https:\/\/www.deezer.com\/album\/9323488","cover":"https:\/\/api.deezer.com\/album\/9323488\/image","cover_small":"https:\/\/cdns-images.dzcdn.net\/images\/cover\/90b6c4e8d3a0872dc0f08e03560c7705\/56x56-000000-80-0-0.jpg","cover_medium":"https:\/\/cdns-images.dzcdn.net\/images\/cover\/90b6c4e8d3a0872dc0f08e03560c7705\/250x250-000000-80-0-0.jpg","cover_big":"https:\/\/cdns-images.dzcdn.net\/images\/cover\/90b6c4e8d3a0872dc0f08e03560c7705\/500x500-000000-80-0-0.jpg","cover_xl":"https:\/\/cdns-images.dzcdn.net\/images\/cover\/90b6c4e8d3a0872dc0f08e03560c7705\/1000x1000-000000-80-0-0.jpg","tracklist":"https:\/\/api.deezer.com\/album\/9323488\/tracks","artist":{"id":328043,"name":"Spiritual
+      Front","link":"https:\/\/www.deezer.com\/artist\/328043","picture":"https:\/\/api.deezer.com\/artist\/328043\/image","tracklist":"https:\/\/api.deezer.com\/artist\/328043\/top?limit=50","type":"artist"},"type":"album"}],"total":1}'
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 13 Jan 2017 22:41:54 GMT
+      P3p:
+      - policyref="/w3c/p3p.xml" CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+      Server:
+      - Apache
+      Set-Cookie:
+      - dzr_uniq_id=dzr_uniq_id_fr42be7e6bc3296f6cbdf6773b3bc0999c7636c6; expires=Wed,
+        12-Jul-2017 22:41:54 GMT; Max-Age=15552000; path=/; domain=.deezer.com
+      Vary:
+      - Accept-Encoding
+      X-Host:
+      - blm-web-24
+    status: 200 OK
+    code: 200

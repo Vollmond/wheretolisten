@@ -1,0 +1,29 @@
+---
+version: 1
+rwmutex: {}
+interactions:
+- request:
+    body: ""
+    form: {}
+    headers: {}
+    url: https://api.music.yandex.net/search?page=0&text=Armageddon+Gigolo&type=album
+    method: GET
+  response:
+    body: '{"invocationInfo":{"hostname":"back14e.music.yandex.net","req-id":"17aeb90c674b149245230903a93b8a2e","exec-duration-millis":"10"},"result":{"type":"album","page":0,"perPage":10,"text":"Armageddon
+      Gigolo","searchRequestId":"back14e.music.yandex.net-17aeb90c674b149245230903a93b8a2e-1484334918301","albums":{"total":1,"perPage":10,"results":[{"id":276007,"storageDir":"7807cc4b.a.276007","originalReleaseYear":2006,"year":2006,"title":"Armageddon
+      Gigolo","artists":[{"id":556107,"various":false,"name":"Spiritual Front","cover":{"type":"from-album-cover","prefix":"7807cc4b.a.276007-1","uri":"avatars.yandex.net/get-music-content/28589/7807cc4b.a.276007-1/%%"},"composer":false,"decomposed":[]}],"coverUri":"avatars.yandex.net/get-music-content/28589/7807cc4b.a.276007-1/%%","trackCount":11,"genre":"rock","available":true,"regions":["RUSSIA_PREMIUM","RUSSIA"]}]}}}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Fri, 13 Jan 2017 19:15:18 GMT
+      Keep-Alive:
+      - timeout=120
+      Server:
+      - nginx
+    status: 200 OK
+    code: 200

@@ -1,0 +1,29 @@
+---
+version: 1
+rwmutex: {}
+interactions:
+- request:
+    body: ""
+    form: {}
+    headers: {}
+    url: https://api.music.yandex.net/search?page=0&text=idkfa&type=album
+    method: GET
+  response:
+    body: '{"invocationInfo":{"hostname":"back14e.music.yandex.net","req-id":"97bd6cc373ff7fbc5e6e083c7d0c830a","exec-duration-millis":"28"},"result":{"type":"album","page":0,"perPage":10,"text":"idkfa","searchRequestId":"back14e.music.yandex.net-97bd6cc373ff7fbc5e6e083c7d0c830a-1484334918318","albums":{"total":2,"perPage":10,"results":[{"id":2236049,"storageDir":"fe834467.a.2236049","originalReleaseYear":2012,"year":2012,"title":"Knee
+      Deep in the Deaf...","artists":[{"id":3192232,"various":false,"name":"IDKFA","cover":{"type":"from-album-cover","prefix":"fe834467.a.2236049-2","uri":"avatars.yandex.net/get-music-content/63210/fe834467.a.2236049-2/%%"},"composer":false,"decomposed":[]}],"coverUri":"avatars.yandex.net/get-music-content/63210/fe834467.a.2236049-2/%%","trackCount":5,"genre":"electronics","available":true,"regions":["RUSSIA_PREMIUM","RUSSIA"]},{"id":3181214,"storageDir":"d3b3c7fb.a.3181214","originalReleaseYear":2016,"year":2016,"title":"Indecent
+      - EP","artists":[{"id":3192232,"various":false,"name":"IDKFA","cover":{"type":"from-album-cover","prefix":"fe834467.a.2236049-2","uri":"avatars.yandex.net/get-music-content/63210/fe834467.a.2236049-2/%%"},"composer":false,"decomposed":[]}],"coverUri":"avatars.yandex.net/get-music-content/38044/d3b3c7fb.a.3181214-1/%%","trackCount":5,"genre":"electronics","available":true,"regions":["RUSSIA_PREMIUM","RUSSIA"]}]}}}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Fri, 13 Jan 2017 19:15:18 GMT
+      Keep-Alive:
+      - timeout=120
+      Server:
+      - nginx
+    status: 200 OK
+    code: 200

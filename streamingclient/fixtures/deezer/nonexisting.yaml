@@ -1,0 +1,30 @@
+---
+version: 1
+rwmutex: {}
+interactions:
+- request:
+    body: ""
+    form: {}
+    headers: {}
+    url: https://api.deezer.com/search/album?q=artist%3A%22Non+Existing+Garbage%22+album%3A%22Armageddon+Gigolo%22
+    method: GET
+  response:
+    body: '{"data":[],"total":0}'
+    headers:
+      Content-Length:
+      - "21"
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 13 Jan 2017 22:54:44 GMT
+      P3p:
+      - policyref="/w3c/p3p.xml" CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+      Server:
+      - Apache
+      Set-Cookie:
+      - dzr_uniq_id=dzr_uniq_id_fr742e34d9f94ad569b1268c812d77c0b3fe2df4; expires=Wed,
+        12-Jul-2017 22:54:44 GMT; Max-Age=15552000; path=/; domain=.deezer.com
+      X-Host:
+      - blm-web-75
+    status: 200 OK
+    code: 200
