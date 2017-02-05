@@ -27,6 +27,7 @@ func (album Album) FindYandex() string {
 	albumID := parseYandexResponse(response).findAlbumId(album)
 	var url string
 	if albumID != 0 {
+		// fmt.Println(albumID)
 		url = fmt.Sprintf("https://music.yandex.ru/album/%d", albumID)
 	}
 	return url

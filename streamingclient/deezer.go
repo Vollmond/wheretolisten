@@ -16,8 +16,9 @@ type deezerApiData struct {
 
 func (album Album) FindDeezer() string {
 	rawData, err := http.Get(album.buildDeezerQuery())
-	log.Fatal(err)
 	if err != nil {
+		log.Fatal(err)
+		return ""
 	}
 	defer rawData.Body.Close()
 	return parseDeezerResponse(rawData).findLink()
@@ -27,7 +28,6 @@ func (apiAlbum deezerApiData) findLink() string {
 	if len(apiAlbum.Data) == 0 {
 		return ""
 	}
-	log.Println(apiAlbum.Data)
 	return apiAlbum.Data[0].Link
 }
 
