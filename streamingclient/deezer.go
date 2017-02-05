@@ -3,6 +3,7 @@ package streamingclient
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 	"net/http"
 	"net/url"
 )
@@ -14,7 +15,11 @@ type deezerApiData struct {
 }
 
 func (album Album) FindDeezer() string {
-	rawData, _ := http.Get(album.buildDeezerQuery())
+	rawData, err := http.Get(album.buildDeezerQuery())
+	log.Fatal(err)
+	if err != nil {
+	}
+	defer rawData.Body.Close()
 	return parseDeezerResponse(rawData).findLink()
 }
 
@@ -22,6 +27,7 @@ func (apiAlbum deezerApiData) findLink() string {
 	if len(apiAlbum.Data) == 0 {
 		return ""
 	}
+	log.Println(apiAlbum.Data)
 	return apiAlbum.Data[0].Link
 }
 

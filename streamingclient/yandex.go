@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"net/http"
 	"net/url"
+	"strings"
 )
 
 type yandexApiData struct {
@@ -35,7 +36,7 @@ func (apiData *yandexApiData) findAlbumId(album Album) int {
 	albumsList := apiData.Result.Albums.Results
 	var albumId int
 	for i := 0; i < len(albumsList); i++ {
-		if albumsList[i].Title == album.Name && albumsList[i].Artists[0].Name == album.ArtistName {
+		if strings.EqualFold(albumsList[i].Title, album.Name) && strings.EqualFold(albumsList[i].Artists[0].Name, album.ArtistName) {
 			albumId = albumsList[i].ID
 		}
 	}
